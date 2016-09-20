@@ -1,0 +1,152 @@
+/* 
+
+Inspiracao: https://dribbble.com/shots/2312008-User-Profile-Daily-UI-006 e Material Design.
+Tudo feito por Guilherme Oliveira.
+
+*/
+
+*
+{
+	padding:0;
+	margin:0;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body 
+{
+	background:url('../imgs/background.jpg');
+    background-size:cover;
+}
+body, a
+{
+	font-family: 'Roboto', sans-serif;
+	color:#262626;
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: none;
+}
+@keyframes updown
+{
+    0%   {margin-top:70px;}
+    50%  {margin-top:80px;}
+    75%  {margin-top:60px;}
+    100% {margin-top:70px;}
+}
+main
+{
+	display: table;
+	margin:0 auto;
+	background:#fff;
+	height: 430px;
+	width: 320px;
+	margin-top:70px;
+	overflow:hidden;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	animation-name: updown;
+    animation-duration: 0.5s;
+}
+img
+{
+	width:120px;
+	height:120px;
+	margin-top:10px;
+	border-radius:50%;
+	border:8px solid rgba(255,255,255,0.4);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
+p
+{
+	color:gray;
+}
+#cover 
+{
+    position:relative;
+    background:url('../imgs/cover.jpg');
+    background-size:cover;
+    height:180px;
+    padding-top:10px;   
+    overflow:hidden;
+    width: 100%;
+    text-align: center;
+}
+#cover:after
+{
+    content:'';
+    position:absolute;
+    bottom:0; left:0;
+    border-left:160px solid #fff;
+    border-right:160px solid #fff;
+    border-top:20px solid transparent;
+}
+#info
+{
+	margin-top:10px;
+}
+#description
+{
+	width:280px;
+	line-height: 1.4;
+	text-align: justify;
+	font-size:14px;
+	margin-top:10px;
+}
+/* Parte dos ícones. */
+@font-face 
+{
+	font-family: 'icons';
+	src:  url('../fonts/icons.eot?79exts');
+	src:  url('../fonts/icons.eot?79exts#iefix') format('embedded-opentype'),
+		url('../fonts/icons.ttf?79exts') format('truetype'),
+		url('../fonts/icons.woff?79exts') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+#icons 
+{
+	margin-top:8px;
+}
+#contact
+{
+	font-size:12px;
+	margin-top:5px;
+	line-height: 1.4;
+}
+[class^="icon-"], [class*=" icon-"] 
+{
+	font-family: 'icons' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size:18px;
+	margin-left:3px;
+	cursor: pointer;
+}
+.icon-facebook:before 
+{
+	content: "\ea90";
+}
+.icon-facebook:hover 
+{ 
+	color:#3B5998; 
+}
+.icon-twitter:before 
+{
+	content: "\ea96";
+	font-size:20px;
+}
+.icon-twitter:hover 
+{ 
+	color:#1DA1F2; 
+}
+.icon-github:before 
+{
+	content: "\eab0";
+}
+.icon-github:hover 
+{ 
+	color:#66757F; 
+}
